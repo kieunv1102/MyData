@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChristmasSticker.iml" filepath="$PROJECT_DIR$/ChristmasSticker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libscolor/libscolor.iml" filepath="$PROJECT_DIR$/libscolor/libscolor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libsfilter/libsfilter.iml" filepath="$PROJECT_DIR$/libsfilter/libsfilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libstabstrip/libstabstrip.iml" filepath="$PROJECT_DIR$/libstabstrip/libstabstrip.iml" />
+    </modules>
+  </component>
+</project>

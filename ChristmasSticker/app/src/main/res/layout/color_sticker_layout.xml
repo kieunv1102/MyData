@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStickerColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#80000000"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.entertaiment.photo.christmassticker.horizontallisview.HorizontalListView
+        android:id="@+id/lvColorSticker"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip" />
+
+   <!-- <SeekBar
+        android:id="@+id/sbStickerBlur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:max="10"
+        android:maxHeight="4dp"
+        android:minHeight="2dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:progressDrawable="@drawable/xml_seekbar"
+        android:thumb="@drawable/xml_circle" />
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRemoveSticker"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_remove"
+                android:layout_marginRight="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnOkSticker"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_ok"
+                android:layout_marginRight="5dip" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

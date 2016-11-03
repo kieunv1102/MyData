@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.entertaiment.photo.christmassticker" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+        <activity
+            android:name=".screen.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".screen.SetPhotoActivity"
+            android:label="@string/title_activity_set_photo"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+        </activity>
+        <activity
+            android:name=".screen.StickerActivity"
+            android:label="@string/title_activity_sticker" >
+        </activity>
+        <activity
+            android:name=".screen.TextActivity"
+            android:label="@string/title_activity_text" >
+        </activity>
+    </application>
+
+</manifest>

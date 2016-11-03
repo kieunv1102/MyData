@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/bg2"
+    tools:context="com.entertaiment.photo.christmassticker.screen.SetPhotoActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/share1"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/save1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/hlv_btn_set_photo"
+        android:layout_weight="1">
+
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/imvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/hlv_btn_set_photo"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:id="@+id/frsetSticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+        <com.entertaiment.photo.christmassticker.horizontallisview.HorizontalListView
+            android:id="@+id/hlv_filter_photo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/hlv_btn_set_photo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right|bottom"
+            android:background="#80000000"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/sbradius"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/hlv_filter_photo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btnSticker"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btsticker"/>
+        <Button
+            android:id="@+id/btnText"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bttext"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btfilter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</LinearLayout>
